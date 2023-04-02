@@ -1,6 +1,7 @@
-tmp/*
+/tmp
 secrets.txt
-wp/*
+/wp
+!wp/**/kuroneko-hair/
 
 # Created by https://www.toptal.com/developers/gitignore/api/wordpress
 # Edit at https://www.toptal.com/developers/gitignore?templates=wordpress
