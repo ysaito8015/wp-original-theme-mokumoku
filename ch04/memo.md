@@ -12,3 +12,10 @@ $ mkdir ./wp/wp-content/themes/kuroneko-hair
 $ cat ./tmp/kuroneko_sample/Chapter4/Step2/HTML/index.html > ./wp/wp-content/themes/kuroneko-hair/index.php
 $ touch ./wp/wp-content/themes/kuroneko-hair/style.css
 ```
+
+## サムネイル画像のコピー
+
+```shell
+$ cp -a ./tmp/kuroneko_sample/Chapter4/Step3/screenshot.png ./wp/wp-content/themes/kuroneko-hair/
+```
+
