@@ -1,0 +1,58 @@
+# docker compose file for nutrize.jp corporate site
+version: "3.8"
+
+services:
+  db:
+    container_name: wp-kuroneko-db
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: "somewordpress"
+      MYSQL_DATABASE: kuroneko_wp
+      MYSQL_USER: kuroneko
+      #MYSQL_PASSWORD_FILE: /run/secrets/my_secret
+      MYSQL_PASSWORD: "kuroneko"
+    secrets:
+      - my_secret
+    networks:
+      - db_net
+
+  wordpress:
+    container_name: wp-kuroneko
+    depends_on:
+      - db
+    build: .
+    image: wp-kuroneko:latest
+    volumes:
+      # - wordpress_data:/var/www/html
+      - ./wp:/var/www/html
+    ports:
+      - "8090:80"
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: kuroneko
+      #WORDPRESS_DB_PASSWORD_FILE: /run/sercrets/my_secret
+      WORDPRESS_DB_PASSWORD: "kuroneko"
+      WORDPRESS_DB_NAME: kuroneko_wp
+    secrets:
+      - my_secret
+    networks:
+      - db_net
+
+networks:
+  db_net:
+    driver: bridge
+
+secrets:
+  my_secret:
+    file: secrets.txt
+
+volumes:
+  db_data: {}
+  # wordpress_data: {}
+
+
+
