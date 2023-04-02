@@ -19,3 +19,8 @@ $ touch ./wp/wp-content/themes/kuroneko-hair/style.css
 $ cp -a ./tmp/kuroneko_sample/Chapter4/Step3/screenshot.png ./wp/wp-content/themes/kuroneko-hair/
 ```
 
+## アセットファイルのコピー
+
+```shell
+$ cp -a ./tmp/kuroneko_sample/Chapter4/Step4/assets ./wp/wp-content/themes/kuroneko-hair/
+```
