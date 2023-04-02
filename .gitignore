@@ -1,4 +1,6 @@
 tmp/*
+secrets.txt
+wp/*
 
 # Created by https://www.toptal.com/developers/gitignore/api/wordpress
 # Edit at https://www.toptal.com/developers/gitignore?templates=wordpress
