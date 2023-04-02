@@ -19,6 +19,7 @@
 
 
 ```shell
+$ mkdir ./wp
 $ docker pull wordpress:latest
 $ dcoker create --name wpcopy wordpress:latest
 $ docker cp wpcopy:/var/www/html/wp-content ./wp
