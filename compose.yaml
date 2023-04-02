@@ -1,0 +1,45 @@
+# defining version is (DEPRECATED)
+
+services:
+  db:
+    container_name: wp-kuroneko-db
+    image: mysql:5.7
+    working_dir: /outputs
+    volumes:
+      - db_data:/var/lib/mysql
+      - "${PWD}/mysql/backup:/backup"
+      - "${PWD}/etc/my.cnf:/etc/mysql/my.cnf"
+      - "${PWD}/mysql/outputs:/outputs"
+    restart: always
+    env_file:
+      - .env
+    networks:
+      - db_net
+
+  wordpress:
+    container_name: wp-kuroneko
+    depends_on:
+      - db
+    build: .
+    image: wp-kuroneko:latest
+    user: "${UID}:${GID}"
+    volumes:
+      - wordpress_data:/var/www/html
+      - "${PWD}/wp:/wp"
+      - "${PWD}/etc/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini"
+    ports:
+      - "8090:80"
+    restart: always
+    env_file:
+      - .env
+    networks:
+      - db_net
+
+networks:
+  db_net:
+    driver: bridge
+
+volumes:
+  db_data: {}
+  wordpress_data: {}
+
