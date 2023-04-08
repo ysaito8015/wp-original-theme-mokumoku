@@ -16,7 +16,7 @@
                     <article class="module-Article_Item">
                         <a href="#" class="module-Article_Item_Link">
                             <div class="module-Article_Item_Img">
-                                <img src="./assets/img/rainy-day-thumb.jpg" alt="" width="200" height="150" load="lazy">
+                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/rainy-day-thumb.jpg" alt="" width="200" height="150" load="lazy">
                             </div>
                             <div class="module-Article_Item_Body">
                                 <h3 class="module-Article_Item_Title">雨の日キャンペーン開催</h3>
@@ -31,7 +31,7 @@
                     <article class="module-Article_Item">
                         <a href="#" class="module-Article_Item_Link">
                             <div class="module-Article_Item_Img">
-                                <img src="./assets/img/lighthouse-thumb.jpg" alt="" width="200" height="150" load="lazy">
+                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/lighthouse-thumb.jpg" alt="" width="200" height="150" load="lazy">
                             </div>
                             <div class="module-Article_Item_Body">
                                 <h3 class="module-Article_Item_Title">ロケーション撮影に行きました</h3>
@@ -46,7 +46,7 @@
                     <article class="module-Article_Item">
                         <a href="#" class="module-Article_Item_Link">
                             <div class="module-Article_Item_Img">
-                                <img src="./assets/img/dummy-image.png" alt="" width="200" height="150" load="lazy">
+                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/dummy-image.png" alt="" width="200" height="150" load="lazy">
                             </div>
                             <div class="module-Article_Item_Body">
                                 <h3 class="module-Article_Item_Title">臨時休業のお知らせ</h3>
@@ -71,7 +71,7 @@
                     <div class="module-Style_Item">
                         <a href="#" class="module-Style_Item_Link" title="メンズパーマ">
                             <figure class="module-Style_Item_Img">
-                                <img src="./assets/img/hairstyle4.png" alt="">
+                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/hairstyle4.png" alt="">
                             </figure>
                         </a>
                     </div>
@@ -80,7 +80,7 @@
                     <div class="module-Style_Item">
                         <a href="#" class="module-Style_Item_Link" title="前髪ありキュートボブ">
                             <figure class="module-Style_Item_Img">
-                                <img src="./assets/img/hairstyle3.png" alt="">
+                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/hairstyle3.png" alt="">
                             </figure>
                         </a>
                     </div>
@@ -89,7 +89,7 @@
                     <div class="module-Style_Item">
                         <a href="#" class="module-Style_Item_Link" title="メンズカット">
                             <figure class="module-Style_Item_Img">
-                                <img src="./assets/img/hairstyle2.png" alt="">
+                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/hairstyle2.png" alt="">
                             </figure>
                         </a>
                     </div>
@@ -98,7 +98,7 @@
                     <div class="module-Style_Item">
                         <a href="#" class="module-Style_Item_Link" title="大人ミディアム">
                             <figure class="module-Style_Item_Img">
-                                <img src="./assets/img/hairstyle1.png" alt="">
+                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/hairstyle1.png" alt="">
                             </figure>
                         </a>
                     </div>

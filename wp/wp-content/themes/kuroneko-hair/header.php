@@ -8,7 +8,7 @@
     <meta name="description" content="ゆったり時間と癒しの美容室サンプルサイト">
     <title>Kuroneko Hair</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
-    <link href="./assets/css/theme-styles.css" rel="stylesheet" media="all">
+    <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/stylesheets/theme-styles.css" rel="stylesheet" media="all">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 
@@ -17,7 +17,7 @@
         <header role="banner" class="header">
             <h1 class="header-SiteName">
                 <a href="/" class="header-SiteName_Link">
-                    <img src="./assets/img/logo.png" alt="Kuroneko Hair">
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo.png" alt="Kuroneko Hair">
                 </a>
                 <span class="header-Tagline">ゆったり時間と癒しの美容室サンプルサイト</span>
             </h1>
