@@ -45,14 +45,14 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </div> <!-- / .row -->
+                </div> <!-- / .container-fluid -->
+            </div> <!-- / .footer-Widgets -->
             <p class="footer-Copyright">
                 <small>&copy; 2021 Kuroneko Hair Sample </small>
-            </p>
+            </p> <!-- / .footer-Copyright -->
         </footer>
-    </div>
+    </div> <!-- / .content-Wrap -->
     <script src="./assets/js/theme-common.js"></script>
 </body>
 
