@@ -12,9 +12,11 @@
                                         </h1>
                                     </header>
                                     <div class="content-Body">
-                                        <div class="content-EyeCatch">
-                                            <?php  the_post_thumbnail( 'page_tyecatch' ); ?>
-                                        </div> <!-- / .content-EyeCatch -->
+                                        <?php if( has_post_thumbnail() ): ?>
+                                            <div class="content-EyeCatch">
+                                                <?php  the_post_thumbnail( 'page_tyecatch' ); ?>
+                                            </div> <!-- / .content-EyeCatch -->
+                                        <?php endif; ?>
                                         <?php the_content(); ?>
                                     </div> <!-- / .content-Body -->
                                 </article>
