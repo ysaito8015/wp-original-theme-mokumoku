@@ -11,6 +11,7 @@
                         <?php endif; ?>
                     </main>
                 </div> <!-- / .col-lg-8 -->
+                <?php get_sidebar(); ?> <!-- col-lg-4 -->
             </div> <!-- / .row -->
         </div> <!-- / .container-fluid content -->
 <?php get_footer(); ?>
