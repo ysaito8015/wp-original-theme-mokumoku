@@ -14,6 +14,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+    <?php wp_body_open(); ?>
     <div class="content-Wrap">
         <header role="banner" class="header">
             <h1 class="header-SiteName">
