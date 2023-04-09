@@ -12,7 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
     <div class="content-Wrap">
         <header role="banner" class="header">
             <h1 class="header-SiteName">
