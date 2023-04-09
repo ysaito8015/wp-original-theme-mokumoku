@@ -8,9 +8,14 @@
                                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                                     <header class="content-Header">
                                         <h1 class="content-Title">
-                                            <?php the_title(); ?>
+                                            店舗案内
                                         </h1>
                                     </header>
+                                    <div class="content-Body">
+                                        <div class="content-EyeCatch">
+                                        </div> <!-- / .content-EyeCatch -->
+                                        <?php the_content(); ?>
+                                    </div> <!-- / .content-Body -->
                                 </article>
                             <?php endwhile; ?>
                         <?php endif; ?>
