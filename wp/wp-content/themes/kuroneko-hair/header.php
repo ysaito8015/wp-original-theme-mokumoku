@@ -16,10 +16,10 @@
     <div class="content-Wrap">
         <header role="banner" class="header">
             <h1 class="header-SiteName">
-                <a href="/" class="header-SiteName_Link">
-                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo.png" alt="Kuroneko Hair">
+                <a href="<?php echo esc_url( home_url() ); ?>" class="header-SiteName_Link">
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo.png" alt="<?php bloginfo( 'name' ); ?>">
                 </a>
-                <span class="header-Tagline">ゆったり時間と癒しの美容室サンプルサイト</span>
+                <span class="header-Tagline"><?php bloginfo( 'description' ); ?></span>
             </h1>
             <nav class="header-Nav">
                 <button type="button" class="header-NavToggle" aria-controls="global-Nav" aria-expanded="false" aria-label="メニュー開閉">
