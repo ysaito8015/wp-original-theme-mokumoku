@@ -8,7 +8,6 @@
     <meta name="description" content="<?php bloginfo( 'description' ); ?>">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
     <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/stylesheets/theme-styles.css" rel="stylesheet" media="all">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <?php wp_head(); ?>
 </head>
 
