@@ -6,6 +6,11 @@
                         <?php if( have_posts() ) : ?>
                             <?php while( have_posts() ) : the_post(); ?>
                                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                                    <header class="content-Header">
+                                        <h1 class="content-Title">
+                                            <?php the_title(); ?>
+                                        </h1>
+                                    </header>
                                 </article>
                             <?php endwhile; ?>
                         <?php endif; ?>
