@@ -13,6 +13,7 @@
                                     </header>
                                     <div class="content-Body">
                                         <div class="content-EyeCatch">
+                                            <?php  the_post_thumbnail( 'page_tyecatch' ); ?>
                                         </div> <!-- / .content-EyeCatch -->
                                         <?php the_content(); ?>
                                     </div> <!-- / .content-Body -->
