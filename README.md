@@ -81,5 +81,9 @@ $ docker compose up -d
 
 
 #### Host 側で `docker exec` する際に
-- `direnv` で `.env` ファイルと同じような設定を `.envrc` に記述する
-    - `.envrc` は shell-script 形式の記述なので注意
+- `direnv` を使用する場合下記の内容を `.envrc` に記載することで、`.env` の内容を読み込んでくれる
+
+
+```
+dotenv
+```
