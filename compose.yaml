@@ -3,7 +3,7 @@
 services:
   db:
     container_name: wp-kuroneko-db
-    image: mysql:5.7
+    image: mariadb:10.6
     working_dir: /outputs
     volumes:
       - db_data:/var/lib/mysql

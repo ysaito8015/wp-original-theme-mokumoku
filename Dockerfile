@@ -10,7 +10,9 @@ RUN apt update && \
 RUN useradd -g www-data containeruser && \
     usermod -aG sudo containeruser && \
     echo "containeruser ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
-ENV FIXUID_URL="https://github.com/boxboat/fixuid/releases/download/v0.5.1/fixuid-0.5.1-linux-amd64.tar.gz"
+    ## Fixuid is a tool that allows you to run a process as a different user and group
+    ## See https://github.com/boxboat/fixuid
+ENV FIXUID_URL="https://github.com/boxboat/fixuid/releases/download/v0.6.0/fixuid-0.6.0-linux-amd64.tar.gz"
 RUN USER=containeruser && \
     GROUP=containeruser && \
     curl -SsL ${FIXUID_URL} | tar -C /usr/local/bin -zxf - && \
