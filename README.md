@@ -24,7 +24,7 @@
 ### `./wp` 以下のパーミッション問題の解決法
 - docker のコンテナ内の実行時ユーザの UID と GID がホストと違うために、bind したときに permission error が起きる
     - 参考 [dockerのmount volumeのpermissionをfixuidでなんとかする](https://qiita.com/takumiabe/items/fee2e76e3a39fd853589)
-- WordPress が配備されるディレクトリは別のディレクトリを bind mount して、動機が必要なディレクトリのみシェルスクリプトでホストとコンテナの中身を rsync する
+- WordPress が配備されるディレクトリは別のディレクトリを bind mount して、同期が必要なディレクトリのみシェルスクリプトでホストとコンテナの中身を rsync する
 
 #### make_env.sh
 
