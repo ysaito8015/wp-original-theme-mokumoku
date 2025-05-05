@@ -13,5 +13,17 @@ function neko_enqueue_scripts(){
         '1.0.0',
         true
     );
+    wp_enqueue_style(
+        'googlefonts',
+        'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap',
+        array(),
+        '1.0.0'
+    );
+    wp_enqueue_style(
+        'kuroneko-theme-styles',
+        get_template_directory_uri() . '/assets/css/theme-styles.css',
+        array(),
+        '1.0.0'
+    );
 }
 add_action( 'wp_enqueue_scripts', 'neko_enqueue_scripts' );

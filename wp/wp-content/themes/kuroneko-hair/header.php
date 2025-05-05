@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php bloginfo( 'description' ); ?>">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
-    <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/theme-styles.css" rel="stylesheet" media="all">
     <?php wp_head(); ?>
 </head>
 
