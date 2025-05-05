@@ -38,7 +38,7 @@ mysql/backup
 # Note: If you wish to whitelist themes,
 # uncomment the next line
 #/wp-content/themes
-
+/wp/wp-content/themes/kuroneko-hair/assets
 
 # End of https://www.toptal.com/developers/gitignore/api/wordpress
 
