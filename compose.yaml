@@ -21,7 +21,6 @@ services:
     depends_on:
       - db
     build: .
-    image: wp-kuroneko:latest
     user: "${UID}:${GID}"
     volumes:
       - wordpress_data:/var/www/html
