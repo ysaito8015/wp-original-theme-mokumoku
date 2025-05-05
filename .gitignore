@@ -1,8 +1,11 @@
 tmp/*
 wp-backups/
-secrets.txt
 .env
 .envrc
+
+# mysql outputs
+mysql/outputs
+mysql/backup
 
 # Created by https://www.toptal.com/developers/gitignore/api/wordpress
 # Edit at https://www.toptal.com/developers/gitignore?templates=wordpress
@@ -18,7 +21,7 @@ secrets.txt
 #/wp/wp-content/plugins/hello.php
 
 # Uploads
-#/wp/uploads/
+/wp/uploads/
 
 # Log files
 *.log
